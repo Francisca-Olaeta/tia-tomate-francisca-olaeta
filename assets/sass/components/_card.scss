@@ -1,0 +1,109 @@
+.card {
+    @include flex-center;
+    flex-flow: column wrap;
+    padding: 1rem 3rem;
+
+    /*Card images*/
+        &__img {
+            @include card-img;
+        }
+
+        &--img1 {
+            height: 7rem;
+            background-image: url("../../assets/img/about-1.png");
+        }
+
+        &--img2 {
+            height: 6rem;
+            background-image: url("../../assets/img/about-2.png");
+        }
+
+        &--img3 {
+            height: 8rem;
+            background-image: url("../../assets/img/about-3.png");
+            background-size: contain;
+        }
+
+        &--img4 {
+            height: 8rem;
+            background-image: url("../../assets/img/about-4.png");
+            background-size: contain;
+        }
+
+        /*Card-text (título+texto) */
+        &__text {
+            width: 90%;
+            padding: 0 1rem 1rem 1rem;
+        }
+
+        /*Card title*/
+        
+        &__title {
+            @include title-h4 ($text-color-dark);
+            font-weight: bold;
+
+            &--title-light {
+            @include title-h4 ($text-color-light);
+            font-weight: bold;
+            }
+        }
+
+        /*Card text p*/
+
+        &__p {
+            @include text ($text-color-dark);
+            padding: .5rem 0rem;
+
+            &--p-light {
+                @include text ($text-color-light);
+                padding: .5rem 0rem;
+            }
+        }
+
+
+        /*Colores: card--dark para fondo oscuro y card--light para fondo claro*/
+
+        &--dark {
+            @include text ($text-color-light);
+            background-color: $bg-secondary;
+        }
+
+        &--light {
+            @include text ($text-color-dark);
+            background-color: $bg-light;
+        }
+
+        /*--------------------------------------------Media query tablet-----------------------------------------------------*/
+        @media (min-width: 576px) {
+            &__img {
+                width: 80%;
+                height: 13rem;
+                background-size: cover;
+                margin: 2rem 0;
+            }
+           
+
+            &__text {
+                width: 70%;
+            }
+
+            &--img3, &--img4 {
+                background-size: contain;
+                
+            }
+        /*--------------------------------------------Media query desktop----------------------------------------------------*/
+            @media (min-width: 996px) {
+                &--img1, &--img2 {
+                    height: 20rem;
+                }
+
+                &__text {
+                    width: 50%;
+                }
+            }
+               
+            }
+
+            }
+            
+

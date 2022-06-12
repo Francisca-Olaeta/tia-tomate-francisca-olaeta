@@ -1,0 +1,38 @@
+/*Sección "Nosotros"*/
+
+.about {
+
+    &__h2 {
+        @include title-h2 ($text-color-light);
+        background-color: $bg-primary;
+        padding: 3rem;
+    }
+
+    @media (min-width: 576px) {
+        &__h2 {
+            padding: 4rem;
+        }
+        
+    }
+}
+
+
+.section {
+    @include flex-center;
+    flex-flow: column wrap;
+    height: 6rem;
+    background-color: $bg-primary;
+
+    &__h3 {
+        @include title-h3 ;
+        
+    }
+
+    @media (min-width: 576px) {
+        height: 8rem;
+    }
+
+    @media (min-width: 996px) {
+        height: 14rem;
+    }
+}

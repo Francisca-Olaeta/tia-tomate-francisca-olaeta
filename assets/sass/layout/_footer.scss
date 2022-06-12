@@ -1,0 +1,23 @@
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #686963;
+ 
+
+
+    &__img {
+        width: 20%;
+        padding: 2rem;
+
+        @media (min-width: 576px) {
+            width: 15%;
+             }
+        
+        @media (min-width: 996px) {
+            width: 10%;
+        }
+    }
+
+}

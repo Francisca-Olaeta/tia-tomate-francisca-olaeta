@@ -1,0 +1,103 @@
+/*Títulos*/
+
+/*H1*/
+@mixin title-h1 ($text-color) {
+    font-size: 1.6rem;
+    text-align: center;
+    color: $text-color;
+
+    @media (min-width: 576px) {
+        font-size: 2rem;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 2.7rem;
+    }
+}
+
+/*H2*/
+@mixin title-h2 ($text-color) {
+    font-size: 1.3rem;
+    text-align: center;
+    color: $text-color;
+
+    @media (min-width: 576px) {
+        font-size: 1.6rem;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 2.2rem;
+    }
+}
+
+/*H3*/
+@mixin title-h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    color: $text-color-light;
+
+    @media (min-width: 576px) {
+        font-size: 1.4rem;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 1.8rem;
+    }
+}
+
+/*H4*/
+@mixin title-h4 ($text-color){
+    font-size: 1rem;
+    text-align: center;
+    color: $text-color;
+
+    @media (min-width: 576px) {
+        font-size: 1.3rem;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+}
+
+/*Textos*/
+@mixin text ($color) {
+    font-size: .5rem;
+    color: $color;
+
+    @media (min-width: 576px) {
+        font-size: .7rem;
+    }
+
+    @media (min-width: 996px) {
+        font-size: 1rem;
+    }
+}
+
+/*Flex*/
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/*Cards*/
+@mixin card-img {
+    width: 100%;
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;  
+    }
+    margin-bottom: 1rem;
+}
+
+

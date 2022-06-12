@@ -1,0 +1,26 @@
+/*Sección principal*/
+
+.main-section {
+    grid-area: main-section;
+}
+
+
+.title__h1 {
+    @include title-h1 ($text-color-light);
+    @include flex-center;
+    flex-flow: column wrap;
+    background-color: $bg-primary;
+    font-weight: lighter;
+    padding: 4rem;
+
+    &__bold {
+        font-weight: bold;
+    }
+
+    @media (min-width: 576px) {
+        height: 30%;
+        @include title-h1 (3rem);
+
+    }
+}
+
